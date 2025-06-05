@@ -14,6 +14,7 @@ import { useFormStore } from "@/store";
 const Dashboard: React.FC = () => {
     // const [forms, setForms] = useState<SavedForm[]>([]);
     const navigate = useNavigate();
+    const {elements} = useFormStore();
 
     const goToForm = () => {
         navigate('/form-builder');
@@ -34,6 +35,7 @@ const Dashboard: React.FC = () => {
             <StyledFormsGrid>
                 <CreateFormCard onClick={createForm} />
                 {
+                    (elements?.length > 0) &&
                     <FormCard
                         onClick={goToForm}
                     />
