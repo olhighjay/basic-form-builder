@@ -33,6 +33,7 @@ const RadioButton = forwardRef<HTMLInputElement, RadioButtonProps>(
             type="radio"
             name={name}
             id={name}
+            ref={ref}
             {...props}
           />
         </StyledRadioBtnWrapper>

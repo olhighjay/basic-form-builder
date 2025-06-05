@@ -3,7 +3,7 @@ import RadioButton from "@/components/ui/formFields/RadioButton";
 import TextInput from "@/components/ui/formFields/TextInput";
 import { useFormStore } from "@/store";
 import type { FormElement } from "@/store/types";
-import { type FormikProps, Field, ErrorMessage } from 'formik';
+import { type FormikProps, Field } from 'formik';
 import { StyledErrorMessage } from "../../preview/styles";
 
 type FormValues = Record<string, any>;

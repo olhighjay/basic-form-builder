@@ -3,7 +3,7 @@
 import { useDrop, useDrag } from "react-dnd";
 import {
   StyledDraggableHeader, StyledDraggableLabel,
-  StyledRequiredMark, StyledSelectedBadge,
+  StyledRequiredMark,
   StyledDraggableContainer, StyledRemoveButton,
   StyledEditButton
 } from "./styles";

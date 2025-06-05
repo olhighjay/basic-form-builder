@@ -1,6 +1,6 @@
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { routes, ROUTE_PATHS } from './routes';
+import { routes } from './routes';
 import { GlobalStyles } from './styles/GlobalStyles';
 import { AppThemeProvider } from './AppThemeProvider';
 import Navbar from './components/layout/Navbar';

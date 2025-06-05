@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 
 export const StyledDroppableArea = styled.div<{ $isOver: boolean }>`
   min-height: 80%;

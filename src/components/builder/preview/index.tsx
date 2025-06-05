@@ -7,7 +7,7 @@ import { Download, Eye, Upload } from "lucide-react";
 import { Code } from "lucide-react";
 import {
     StyledFlexBetween, StyledHiddenInput,
-    StyledImportBtn, StyledPrevBtnFlex,
+    StyledPrevBtnFlex,
     StyledPreviewContainer, StyledPreviewIcon,
     StyledPreviewTabButton, StyledPreviewTabHeader,
     StyledSubmissionBtn

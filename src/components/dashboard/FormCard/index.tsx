@@ -1,4 +1,4 @@
-import type { SavedForm } from "@/types";
+
 import { Card } from "@/components/ui/Card";
 import styled from "styled-components";
 
@@ -20,13 +20,6 @@ interface FormCardProps {
 }
 
 export const FormCard: React.FC<FormCardProps> = ({ onClick }) => {
-    const formatDate = (date: Date) => {
-        return new Intl.DateTimeFormat('en-US', {
-            month: 'short',
-            day: 'numeric',
-            year: 'numeric'
-        }).format(date);
-    };
 
     return (
         <Card title="Continue Editing" description="You will continue with the last form you created" onClick={onClick}>

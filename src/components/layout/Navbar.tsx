@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import { Moon, Sun } from "lucide-react";
 import useThemeContext from "@/contexts/ThemeContext";
-import { useFormStore } from "@/store";
 
 const StyledNavbarContainer = styled.div`
   width: 100%;

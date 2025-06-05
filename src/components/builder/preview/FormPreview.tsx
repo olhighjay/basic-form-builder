@@ -1,6 +1,6 @@
 import FormElementRenderer from "../main/FormElementRenderer";
 import { useFormStore } from "@/store";
-import { Formik, Form } from 'formik';
+import { Formik } from 'formik';
 import * as Yup from 'yup';
 import { StyledFormPreviewContainer, StyledFormPreviewEmptyMessage, StyledFormPreviewFieldWrapper, StyledFormPreviewLabel, StyledFormPreviewRequiredAsterisk, StyledFormPreviewScrollableContent, StyledFormPreviewStyledForm, StyledFormPreviewSubmitButton } from "./styles";
 import SubmissionModal from "./SubmissionModal";
@@ -76,10 +76,9 @@ const FormPreview = () => {
                         validateOnChange={false}
                     >
                         {(formikProps) => {
-                            const { validateForm, submitForm } = formikProps;
+                            const { submitForm } = formikProps;
 
                             const handleSubmitClick = async () => {
-                                const validationErrors = await validateForm();
                                 submitForm();
                             };
 

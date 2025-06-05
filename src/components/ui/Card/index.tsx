@@ -1,4 +1,3 @@
-import type { SavedForm } from "@/types";
 import {
     StyledCardChildrenWrapper,
     StyledCardContainer,

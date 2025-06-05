@@ -1,4 +1,4 @@
-import { styled, css } from "styled-components";
+import { styled } from "styled-components";
 
 export const StyledCheckbox = styled.input`
   width: 16px;
