@@ -1,6 +1,6 @@
 import { useFormStore } from "@/store";
 
-import { useState } from "react";
+import { useRef, useState } from "react";
 import FormPreview from "./FormPreview";
 import JsonPreview from "./JsonPreview";
 import { Download, Eye, Upload } from "lucide-react";
@@ -20,6 +20,11 @@ const PreviewPanel = () => {
         loadFromJson
     } = useFormStore();
 
+    const inputRef = useRef<HTMLInputElement>(null);
+
+    const loadInputRef = () => {
+        inputRef.current?.click();
+    }
 
     const handleImport = (event: React.ChangeEvent<HTMLInputElement>) => {
         const file = event.target.files?.[0];
@@ -69,9 +74,14 @@ const PreviewPanel = () => {
                         onClick={handleExport}>
                         <Download size={20} />
                     </StyledSubmissionBtn>
-                    <StyledSubmissionBtn>
+                    <StyledSubmissionBtn
+                        onClick={loadInputRef}
+                    >
                         <Upload size={20} />
-                        <StyledHiddenInput type="file" accept=".json" onChange={handleImport} />
+                        <StyledHiddenInput ref={inputRef}
+                            type="file" accept=".json"
+                            onChange={handleImport}
+                        />
                     </StyledSubmissionBtn>
                 </StyledPrevBtnFlex>
             </StyledFlexBetween>
